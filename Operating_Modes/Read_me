@@ -1,0 +1,7 @@
+A brief note on the Cortex M4
+The processor has two different modes for functioning:
+a) Thread Mode
+-  The mode where the processor begins
+b) Handler Mode
+-  The mode where the exception handling is carried out
+-  Thread mode to handler mode : Occurence of an exception
