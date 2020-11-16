@@ -1,0 +1,28 @@
+19:34:09 **** Incremental Build of configuration Debug for project Inline_assembly_3 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DDEBUG -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:11:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:30:4: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  p2=(int *)0x20000008;
+    ^
+arm-none-eabi-gcc -o "Inline_assembly_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\Develop_Embedded_Systems\Arm_cortex_m4\Inline_assembly\Inline_assembly_3\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Inline_assembly_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Inline_assembly_3.elf
+ 
+arm-none-eabi-objdump -h -S  Inline_assembly_3.elf  > "Inline_assembly_3.list"
+arm-none-eabi-size   Inline_assembly_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+    720	      8	   1568	   2296	    8f8	Inline_assembly_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: Inline_assembly_3.list
+ 
+19:34:19 **** Incremental Build of configuration Debug for project Inline_assembly_3 ****
+make -j8 all 
+arm-none-eabi-size   Inline_assembly_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+    720	      8	   1568	   2296	    8f8	Inline_assembly_3.elf
+Finished building: default.size.stdout
+ 

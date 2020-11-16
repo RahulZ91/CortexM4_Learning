@@ -1,0 +1,10 @@
+19:08:56 **** Incremental Build of configuration Debug for project Inline_assembly_2 ****
+make -j8 all 
+arm-none-eabi-size   Inline_assembly_2.elf 
+   text	   data	    bss	    dec	    hex	filename
+    708	      8	   1568	   2284	    8ec	Inline_assembly_2.elf
+Finished building: default.size.stdout
+ 
+
+19:08:57 Build Finished. 0 errors, 0 warnings. (took 429ms)
+
