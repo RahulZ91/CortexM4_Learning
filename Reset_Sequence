@@ -1,9 +1,0 @@
-// The document explains the reset sequence for a cortex-M4 processor
-
-The reset sequence is a part of the startup code:
-The reset sequence is as follows:
-
-1. On the reset: the processor loads Program Counter(PC) with 0x0000_0000
-2. The Main Stack Pointer is also initialised with the value at the address of 0x0000_0000
-3. The processor reads the value of 0x0000_0004 to PC - this address contains the reset handler(which is a C function that loads the other necessary libraries and data)
-4. The reset handler ends by calling the main() which is the entry point into the user code.
