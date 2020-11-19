@@ -1,0 +1,5 @@
+The code in this folder is for changing the access levels for the cortex M4.
+Thread and Handler modes are available with the priviledged and unpriviledged access levels.
+The code utilises a function that accesses the CONTROL register and sets the bit0 (which means unpriviledged).
+The processor starts with the thread mode in the priviledged access level and go to unpriviledged level but vice versa is not possible.
+Handler mode must be evoked and the ISR then can change the access level to priviledged on returning to thread mode after completing the ISR.
