@@ -1,0 +1,2 @@
+Solving an exercise for modification of the 7th bit of the value(0xFF) stored at 0x20000200 without and then with but banding for memory
+The exercise also calculates the alias address for the 7th bit
