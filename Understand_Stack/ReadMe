@@ -1,0 +1,11 @@
+The program works as follows
+
+The sp_to_psp() function : ( a naked function )
+    initialise the PSP with a valid address
+    load the above address into PSP 
+    set the SPSEL bit in the control register(use the MOV command since we are working with a 16 bit value as only the 1st bit is to be set(changes MSP to PSP))
+    return to main function by using BX LR; LR has the return address to the main function
+    
+ interrupt_evoke()
+   The function is designed to call the SVC handler and to change the mode of the processor from thread to handler on evoking the ISR for SVC
+   
