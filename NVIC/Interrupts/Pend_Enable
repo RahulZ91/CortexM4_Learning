@@ -1,0 +1,3 @@
+The USART3 interrupt is first pended by the processor and then enabled
+ISR for USART3 is then triggered
+Study of the ISPR1 and ISER1 register status
